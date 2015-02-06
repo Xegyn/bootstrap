@@ -75,7 +75,7 @@
     if (!this.$element.is(':visible')) return
 
     var height       = this.$element.height()
-    var offset       = this.options.offset
+    var offset       = $.extend({}, this.options.offset)
     var offsetTop    = offset.top
     var offsetBottom = offset.bottom
     var scrollHeight = $('body').height()
